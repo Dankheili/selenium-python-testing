@@ -14,6 +14,7 @@ driver.get(demo_website)
 driver.maximize_window()
 input_field = driver.find_element(by="id", value="demo-submission-id") # - Finding element by id attribute
 #input_field = driver.find_element(by="name", value="demo-submission-name") - Finding element by name attribute
+#input_field = driver.find_element(by="xpath", value="//form[1]") - Finding element by xpath (relative)
 input_field.send_keys("Dankheili")
 time.sleep(2)
 input_field.submit()
